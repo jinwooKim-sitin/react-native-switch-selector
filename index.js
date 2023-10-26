@@ -19,8 +19,7 @@ const styles = {
     alignItems: "center",
   },
   animated: {
-    borderWidth: 1,
-    borderColor: "#ed6922",
+    borderWidth: 0,
     position: "absolute",
   },
 };
@@ -155,7 +154,6 @@ export default class SwitchSelector extends Component {
       return (
         <TouchableOpacity
           {...touchableProps}
-          hitSlop={{ top: 5, bottom: 5 }}
           key={index}
           disabled={disabled || element.disabled}
           style={[
